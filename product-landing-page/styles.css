@@ -1,0 +1,217 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica;
+  background-color: #d4dedb
+}
+
+li {
+  margin: 10px 0;
+}
+
+#header {
+  background-color: #2A5C4D;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  font-size: 20px;
+  }
+
+.fa-leaf {
+  color: white;
+  margin: 0 20px;
+}
+
+#header-title {
+  font-size: 22px;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+#nav-bar {
+  display:flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  display: inline;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 16px 16px;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: #ddd;
+}
+
+#main {
+  padding-top: 65px;
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+#caracteristicas {
+  display:flex;
+  flex-direction: column;
+}
+
+.caracteristicas-container {
+  display:flex;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  width: 40vw;
+  padding-top: 45px;
+  padding-left: 20px;
+}
+
+#fotos {
+  width: 100%;
+  text-align:center;
+}
+
+#video {
+  width: 500px;
+  height: 435px;
+}
+
+#nuestras-plantas {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+}
+
+#especies-container {
+  width: 1000px;
+  display:flex;
+}
+
+.item {
+  background-color: #E6E4DE;
+  border-style: solid;
+  border-width: 1px;
+  display:flex;
+  flex-direction:column;
+  margin: 0 10px;
+}
+
+.item h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+#item-header {
+  background-color: #2A5C4D;
+  color:#EEEEEE;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.plant-features {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 50px;
+  text-align: center;
+}
+
+#form-container {
+  border: 1px solid red;
+}
+
+/* Mobile */
+@media only screen and (max-width: 400px) {
+  #main {
+    padding-top: 150px;
+  }
+  
+  #header {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+  }
+
+  #imagen-titulo {
+    display:flex;
+  }
+
+  #header-title {
+    padding: 9px 0 0 8px;
+  }
+
+  .fa-leaf {
+    margin:0;
+  }
+
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:15px;
+  }
+  .nav-link {
+    padding: 8px 12px;
+  }
+
+  .caracteristicas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon {
+    padding-top: 10px;
+    height: 50%;
+  }
+  .desc {
+    align-items: center;
+    width: 60%;
+    height: 150px;
+    padding: 10px 5px 5px 5px;
+    text-align: center;
+  }
+  #especies-container {
+    flex-direction: column;
+  }
+  .item {
+    width: 80%;
+    margin: 15px auto;
+  }
+
+  #video {
+    width: 80%;
+    height: 280px;
+  }
+
+}
+
+/* Tablet and small desktop*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  
+}
+
+/* Desktop  */
+@media only screen and (min-width: 961px) {
+  
+}

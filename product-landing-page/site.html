@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3431e6ad2c.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div id="imagen-titulo">
+          <i class="fa fa-leaf fa-2x" aria-hidden="true"></i>
+        <h2 id="header-title">Plantas carnívoras</h2>
+      </div>
+      <nav id="nav-bar">
+          <a href="#caracteristicas" class="nav-link">Qué incluye</a>
+          <a href="#fotos" class= "nav-link">Fotos y videos</a>
+          <a href="#nuestras-plantas" class="nav-link">Nuestras plantas</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div id ="caracteristicas">
+        <div class="caracteristicas-container">
+          <div class="icon">
+            <i class="fa fa-bug fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="desc">
+            <h2>Alimento para tus plantas</h2>
+            <p>La compra de cualquier especie incluye alimento para los primeros 6 meses.</p>
+          </div>
+        </div>
+        <div class="caracteristicas-container">
+          <div class="icon">
+            <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+          </div>
+          <div class="desc">
+            <h2>Breve guía</h2>
+            <p>Incluye también una breve guía del cuidado especial que requiere cada una de las especies que ofrecemos.</p>
+          </div>
+        </div>
+        <div class="caracteristicas-container">
+            <div class="icon">
+              <i class="fa fa-tint fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>Sustrato</h2>
+              <p>Bolsa de sustrato adicional para el primer trasplante.</p>
+            </div>
+        </div>
+      </div>
+      <div id="fotos">
+        <iframe id ="video" height = auto width = 300px src="https://www.youtube.com/embed/L2BPAsmZAgk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div id="nuestras-plantas">
+        <div id="especies-container">
+          <div class="item">
+            <div id="item-header">Drosera capensis</div>
+            <h2 >$250</h2>
+            <ul class="plant-features">
+                <li>Originaria de Sudáfrica</li>
+                <li>Fácil cultivo</li>
+                <li>Pleno sol</li>
+                <li>requiere agua con bajo contenido mineral</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div id="item-header">Dionaea muscipula</div>
+            <h2 >$200</h2>
+            <ul class="plant-features">
+                <li>Originaria de Norteamérica</li>
+                <li>Conocida como venus atrapamoscas</li>
+                <li>Menor sensibilidad a la falta de agua</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div id="item-header">Nepenthes alata</div>
+            <h2 >$350</h2>
+            <ul class="plant-features">
+              <li>Originaria del Sudeste Asiático</li>
+              <li>Cultivo delicado</li>
+              <li>Requieren de humedad y sombra</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div id="form-container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+          <label for="email" id="email-label">Dejanos un contacto para más información: <input type="email" id="email" label="email" name="email" placeholder = "Ingresa tu mail aquí" required></input></label>
+          <input type="submit" id="submit" value="Enviar"></input>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
