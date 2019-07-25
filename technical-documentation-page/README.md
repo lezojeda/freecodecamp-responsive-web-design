@@ -1,4 +1,4 @@
-# (Technical Documentation Page)(https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
+# [Technical Documentation Page](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page)
 
 ##  [Codepen](https://codepen.io/lezojeda/full/bPmwOY)
 
