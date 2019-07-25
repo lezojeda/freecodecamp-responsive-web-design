@@ -1,2 +1,12 @@
-# freecodecamp-responsive-web-design
- Projects from FreeCodeCamp responsive web design section 
+# FreeCodeCamp: Projects for the [Responsive Web Design certification](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects)
+
+## 1. **Tribute Page**
+
+## 2. **Survery Form**
+  
+## 3. **[Product Landing Page](https://github.com/lezojeda/freecodecamp-responsive-web-design/tree/master/product-landing-page)**
+
+## 4. **[Technical Documentation Page](https://github.com/lezojeda/freecodecamp-responsive-web-design/tree/master/technical-documentation-page)**
+  
+## 5. **[Personal Portfolio Webpage](https://github.com/lezojeda/freecodecamp-responsive-web-design/tree/master/portfolio-webpage)**
+
