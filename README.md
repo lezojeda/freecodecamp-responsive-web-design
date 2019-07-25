@@ -1,10 +1,10 @@
 # FreeCodeCamp: Projects for the [Responsive Web Design certification](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects)
 
-## (Codepen to all projects)[https://codepen.io/collection/XmkpWM/#]
+## [Codepen to all projects](https://codepen.io/collection/XmkpWM/#)
 
-## 1. **[Tribute Page]**(https://codepen.io/lezojeda/full/BgLdjg)
+## 1. **[Tribute Page](https://codepen.io/lezojeda/full/BgLdjg)**
 
-## 2. **[Survey Form]**(https://codepen.io/lezojeda/full/RzgJaQ)
+## 2. **[Survey Form](https://codepen.io/lezojeda/full/RzgJaQ)**
   
 ## 3. **[Product Landing Page](https://github.com/lezojeda/freecodecamp-responsive-web-design/tree/master/product-landing-page)**
 
