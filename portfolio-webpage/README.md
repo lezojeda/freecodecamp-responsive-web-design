@@ -1,3 +1,3 @@
-# Personal Portfolio Webpage
+# [Personal Portfolio Webpage](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage)
 
-This is a project originally intended for the FreeCodeCamp challenge ["Build a Personal Portfolio Webpage (Responsive Web Design Projects)"](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage).
+Project for the FreeCodeCamp "Build a Personal Portfolio Webpage" challenge.
