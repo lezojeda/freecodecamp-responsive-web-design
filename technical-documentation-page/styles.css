@@ -1,20 +1,22 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: Georgia;
 }
 
 body {
-  display:flex;
   background-color: #f9f3ec;
+  display:flex;
+  font-family: 'Asar', serif;
 }
 
 h1 {
+  font-family: 'Libre Caslon Text', serif;
   font-size: 2rem;
 }
 
 h2 {
+  font-family: 'Libre Caslon Text', serif;
   font-size: 1.45rem;
   margin: 20px 0;
 }
@@ -30,8 +32,19 @@ ul {
 }
 
 ul li {
-  padding: 0.3rem;
   font-size: 1.2rem;
+  padding: 0.3rem;
+}
+
+a {
+  color: #a17f56;
+  text-decoration: none;
+  transition: 0.2s; 
+}
+
+a:hover {
+  background: #e7cfb2;
+  color: #7a5b34;
 }
 
 .main-doc-container {
@@ -42,13 +55,13 @@ ul li {
 }
 
 #navbar {
-  position:fixed;
+  background-color: #e7cfb2;
   border-right: 1px solid #393e46 ;
   height: 100%;
   max-height: calc(100% - 10px);
-  width: 350px;
   overflow-y: auto; /* La propiedad  overflow-y define si se debe de cortar el contenido, mostrar una barra scroll, o mostrar el contenido desbordado  de un elemento cuando se desborda de arriba y abajo. */
-  background-color: #f3e7d9;
+  position:fixed;
+  width: 350px;
 }
 
 .navbar-header {
@@ -57,18 +70,40 @@ ul li {
 }
 
 .nav-link {
-  display:block;
-  padding: 28px;
   border-top: 1px solid #393e46;
-
   color: #393e46;
-  font-size: 1.3rem;
+  display:block;
+  font-size: 1.2rem;
+  padding: 15px;
   text-decoration: none;
 }
 
+.nav-link:hover {
+  border: 1px solid #212327;
+  color: black;
+  font-weight: 600;
+}
+
+.underline {
+  display: inline-block;
+}
+
+.underline:after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: black;
+  transition: 250ms;
+}
+
+.nav-link:hover .underline:after {
+  width:100%;
+}
+
 #main-doc {
-  width: 700px;
   padding-top: 30px;
+  width: 700px;
 }
 
 .main-section {
@@ -76,23 +111,26 @@ ul li {
 }
 
 .section-header {
-  margin-bottom: 10px;
   font-size: 25px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .code {
-  display:block;
-  margin: 1em;
-  padding: 0.3em;
-  font-family: Courier;
-  font-size: 1rem;
   background-color:#dbdbd7;
   border: 1px solid gray;
+  display:block;
+  font-family: Courier;
+  font-size: 1rem;
+  margin: 1em;
+  padding: 0.3em;
 }
 
 .character {
   background-color: #dbdbd7;
+  display: inline-block;
+  line-height: 1.5rem;
+  padding: 0px;
 }
 
 @media(max-width: 1220px){
@@ -134,19 +172,19 @@ ul li {
   }
 
   #navbar {
-    position:fixed;
-    height: 150px;
-    width: 100%;
-    top:0;
     border-bottom: 2px solid #393e46;
+    height: 150px;
+    position:fixed;
+    top:0;
+    width: 100%;
   }
   .navbar-header {
     padding: 5px;
   }
 
   .nav-link {
-    padding:10px;
     font-size: 0.9rem;
+    padding:10px;
   }
 
   .main-doc-container {
