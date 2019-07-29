@@ -1,6 +1,6 @@
 # FreeCodeCamp: Projects for the [Responsive Web Design certification](https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects)
 
-## [Codepen to FreeCodeCamp collection](https://codepen.io/collection/XmkpWM/#)
+## [Collection codepen](https://codepen.io/collection/XmkpWM/#)
 
 ## 1. **[Tribute Page](https://codepen.io/lezojeda/full/BgLdjg)**
 
