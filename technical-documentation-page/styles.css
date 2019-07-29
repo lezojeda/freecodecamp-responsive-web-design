@@ -47,6 +47,10 @@ a:hover {
   color: #7a5b34;
 }
 
+img {
+  float:right;
+}
+
 .main-doc-container {
   display:flex;
   flex-grow:1;
