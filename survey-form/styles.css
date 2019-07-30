@@ -1,0 +1,208 @@
+body {
+    background: #99b19c;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Istok Web', sans-serif;
+  }
+  
+textarea {
+    resize: vertical;
+  }
+  
+.form-header {
+    border: 1px solid red;
+    background: #faf5ef;
+    border: 2px solid #672f2f;
+    border-radius: 3px; 
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+    width: 80%;
+}
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+.form-row-checkbox {
+    margin-bottom: 20px;
+}
+
+.legacy-form-row {
+    margin-bottom: 20px;
+}
+
+.legacy-form-row .radio-label {
+    font-size: 14px;
+}
+
+.form-row input[type="text"],
+.form-row input[type = "email"],
+.form-row input[type = "number"],
+.form-row select {
+    background-color: #FFFFFF;
+    border: 1px solid #672f2fa4;
+    border-radius: 3px;
+    padding: 6px;
+    width: 90%;
+}
+
+.form-row input[type = "text"]:invalid,
+.form-row input[type = "email"]:invalid {
+    border: 1px solid #D55C5F;
+    color: #D55C5F;
+}
+
+.form-row input[type = "text"]:focus,
+.form-row input[type = "email"]:focus,
+.form-row input[type = "number"]:focus,
+.form-row select:focus {
+    border: 2px solid #672f2fa4;
+}
+  
+.form-row label {
+    margin-bottom: 8px;
+}
+
+.form-row select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.form-row textarea {
+    border: 1px solid #672f2fa4;
+    border-radius: 3px;
+    padding: 6px;
+    width: 90%;
+}
+
+.form-row .checkbox-label {
+    margin-bottom: 0;
+    font-family: 'Kanit';
+    font-weight: 300;
+}
+
+input { 
+    font-family: 'Kanit';
+    font-weight: 300;
+}
+  
+#title {
+    font-family: 'Patua One', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+  
+#description {
+    font-size: 20x;
+    text-align:center;
+}
+  
+#survey-form {
+    border: 1px solid red;
+    background: #faf5ef;
+    border: 2px solid #672f2f;
+    border-radius: 3px;
+    font-family: 'Kanit', sans-serif;
+    padding: 15px;
+    width: 80%;
+  }
+  
+#submit {
+    background: #6B7B6D;
+    border-radius: 4px;
+    color: #faf5ef;
+    transition-duration: 0.4s;
+}
+  
+#submit span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#submit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#submit:hover span {
+    padding-right: 25px;
+}
+  
+#submit:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+  
+#submit:hover {
+    cursor: pointer;
+}
+  
+#quality {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+    .form-header,
+    #survey-form {
+        width: 600px;
+    }
+
+    .form-row {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .form-row input[type = "text"],
+    .form-row input[type = "email"],
+    .form-row input[type = "number"],
+    .form-row select,
+    .form-row textarea {
+        height: initial;
+        width: 250px;
+    }
+
+    .form-row label {
+        margin-top: 5px;
+        padding-right: 20px;
+        text-align: right;
+        width: 120px;
+    }
+
+    .form-row-checkbox label {
+        margin-top: 5px;
+        margin-left: 15px;
+        text-align: right;
+        width: 120px;
+    }
+
+    .legacy-form-row {
+        border: none;
+        margin-bottom: 10px;
+    }
+    .legacy-form-row legend {
+        width: 120px;
+        text-align: right;
+        padding-right: 20px;
+    }
+    .legacy-form-row legend {
+        float: left;
+    }
+
+    .form-row button {
+        margin-left: 500px;
+        font-size: 1.1em;
+    }
+}
