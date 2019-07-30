@@ -4,7 +4,7 @@
 
 ## 1. **[Tribute Page](https://codepen.io/lezojeda/full/BgLdjg)**
 
-## 2. **[Survey Form](https://codepen.io/lezojeda/full/RzgJaQ)**
+## 2. **[Survey Form](https://github.com/lezojeda/freecodecamp-responsive-web-design/tree/master/survey-form)**
   
 ## 3. **[Product Landing Page](https://github.com/lezojeda/freecodecamp-responsive-web-design/tree/master/product-landing-page)**
 
