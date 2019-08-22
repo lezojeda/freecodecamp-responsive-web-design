@@ -7,7 +7,7 @@
 
 h1 {
   font-family: 'Major Mono Display', monospace;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -141,13 +141,13 @@ header {
   display:flex;
   flex-direction: column;
   height:auto;
-  transition: 250ms;
+  margin: 25px;
   width: auto;
+  transition: 250ms;
 }
 
 .project-link {
   height: auto;
-  margin: 20px;
   width: auto;
 }
 
@@ -210,8 +210,7 @@ header {
 }
 
 .about-image {
-  width: 185px;
-  height: 185px;
+
   border-radius: 50%;
   margin: 10px auto;
 }
@@ -348,6 +347,7 @@ header {
   }
 
   #contact-section h2 {
+    margin-bottom: 10px;
     padding: 10px 0 15px 0;
   }
   
