@@ -59,6 +59,8 @@ header {
   transition: 250ms;
 }
 
+/* Hover effect */
+
 .underline {
   display: inline-block;
 }
@@ -89,7 +91,7 @@ header {
 
 #welcome-section {
   background: linear-gradient(45deg, #f6f5f5, #dddcdc);
-  height: 100vh; /* The height of the welcome section should be equal to the height of the viewport. */ 
+  height: 100vh; /* Height of the welcome section equal to the height of the viewport. */ 
 }
 
 #welcome-container {
@@ -119,6 +121,45 @@ header {
   margin: 10px auto 0 auto;
   max-width: 480px;
   width: 100%;
+}
+
+#welcome-section > a {
+  display:inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+  position:absolute;
+  left:50%;
+  margin-left: -21px;
+  top: 85vh;
+}
+
+.fa-chevron-down {
+  display:block;
+  transition: 0.2s;
+}
+
+.arrow-before {
+  position:relative;
+  top:30px;
+}
+
+.arrow-after {
+  position:relative;
+  top:20px;
+  opacity:0;
+}
+
+.arrow-before:hover {
+  transform: translateY(-10px);
+}
+
+.arrow-before:hover+.arrow-after {
+  opacity: 1;
+  transform: translateY(-15px);
+}
+
+#welcome-section > a, #welcome-section > a:visited {
+  color: #33313b;
 }
 
 /* PROJECTS SECTION */
@@ -324,6 +365,17 @@ header {
   #welcome-container {
     top: 45%;
   }
+
+  .arrow-before {
+    position:relative;
+    top:20px;
+  }
+  
+
+  .arrow-before:hover+.arrow-after {
+    opacity: 0;
+  }
+  
 
   #projects-container {
     display: flex;
