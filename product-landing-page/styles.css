@@ -1,217 +1,198 @@
 * {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  color: rgb(10, 12, 12);
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-body {
-  font-family: Helvetica;
-  background-color: #d4dedb
+main {
+  background: #45C16F;
+  padding-top: 50px;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
-li {
-  margin: 10px 0;
-}
-
-#header {
-  background-color: #2A5C4D;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  width: 100%;
-  display:flex;
-  justify-content: space-between;
-  font-size: 20px;
-  }
-
-.fa-leaf {
-  color: white;
-  margin: 0 20px;
-}
-
-#header-title {
-  font-size: 22px;
-  color: #f2f2f2;
+h1 {
+  font-family: 'Shojumaru', cursive;
+  font-size: 1.4em;
   text-align: center;
 }
 
-#nav-bar {
-  display:flex;
-  flex-direction: row;
+h2,
+.nav-link,
+#item-header {
+  font-family: 'Chewy', sans-serif;
+}
+
+#email, button {
+  font-family: 'Lexend Deca'
+}
+
+section:before {
+  height: 50px;
+  content: "";
+  display: block;
+}
+
+#form-container:before {
+  height: 0px;
+}
+
+header {
+  background: #A45400;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.37);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+#imagen-titulo {
+  display: flex;
+}
+
+#imagen-titulo>.fa {
+  margin-right: 5px;
+}
+
+.nav-icon {
+  color: black;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .nav-link {
-  display: inline;
-  color: #f2f2f2;
+  font-size: 1.4em;
+  padding: 5px;
   text-decoration: none;
-  padding: 16px 16px;
+  text-align: center;
+  width: 100%;
 }
 
 .nav-link:hover {
-  color: black;
-  background-color: #ddd;
+  background: #EF8514;
 }
 
-#main {
-  padding-top: 65px;
-  display:flex;
-  flex-direction:column;
-  align-items: center;
-}
-
-#caracteristicas {
-  display:flex;
-  flex-direction: column;
+#caracteristicas,
+#media,
+#nuestras-plantas {
+  margin-bottom: 10px;
 }
 
 .caracteristicas-container {
-  display:flex;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 125px;
+  margin-bottom: 5px;
 }
 
 .desc {
-  display: flex;
-  flex-direction: column;
-  height: 125px;
-  width: 40vw;
-  padding-top: 45px;
-  padding-left: 20px;
+  text-align: center;
 }
 
-#fotos {
-  width: 100%;
-  text-align:center;
+.desc > h2 {
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  background: #EF8514;
+  border: none;
+  border-radius: 3px;
+  height:45px;
+  margin-bottom: 15px;
+  width: 100px;
+}
+
+.buy-button:hover {
+  background: #FFAF5B;
+  cursor: pointer;
+}
+
+.buy-button:active {
+  background: #EF8514;
+}
+
+#media {
+  padding: 15px;
 }
 
 #video {
-  width: 500px;
-  height: 435px;
+  width: 100%;
 }
 
 #nuestras-plantas {
-  width: 100%;
-  display:flex;
+  padding: 20px;
+}
+
+.planta-item {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  border: 1px solid #A45400;
 }
 
-#especies-container {
-  width: 1000px;
-  display:flex;
-}
-
-.item {
-  background-color: #E6E4DE;
-  border-style: solid;
-  border-width: 1px;
-  display:flex;
-  flex-direction:column;
-  margin: 0 10px;
-}
-
-.item h2 {
-  text-align: center;
-  font-size: 30px;
-  margin-top: 20px;
+.planta-item:not(:last-of-type) {
+  margin-bottom: 20px;
 }
 
 #item-header {
-  background-color: #2A5C4D;
-  color:#EEEEEE;
-  padding: 20px;
+  background: #A45400;
+  font-size: 1.6em;
+  padding: 5px;
   text-align: center;
-  font-size: 25px;
-  font-style: italic;
+  width: 100%;
 }
 
-.plant-features {
+.planta-item>h2 {
+  font-size: 1.8em;
+  padding: 15px;
+}
+
+.planta-item>ul {
   list-style-type: none;
-  padding-left: 0;
-  margin: 0 50px;
+  padding: 15px;
   text-align: center;
 }
 
-#form-container {
-  border: 1px solid red;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px 15px 15px;
+  text-align: center;
 }
 
-/* Mobile */
-@media only screen and (max-width: 400px) {
-  #main {
-    padding-top: 150px;
-  }
-  
-  #header {
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    height: auto;
-  }
-
-  #imagen-titulo {
-    display:flex;
-  }
-
-  #header-title {
-    padding: 9px 0 0 8px;
-  }
-
-  .fa-leaf {
-    margin:0;
-  }
-
-  #nav-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size:15px;
-  }
-  .nav-link {
-    padding: 8px 12px;
-  }
-
-  .caracteristicas-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .icon {
-    padding-top: 10px;
-    height: 50%;
-  }
-  .desc {
-    align-items: center;
-    width: 60%;
-    height: 150px;
-    padding: 10px 5px 5px 5px;
-    text-align: center;
-  }
-  #especies-container {
-    flex-direction: column;
-  }
-  .item {
-    width: 80%;
-    margin: 15px auto;
-  }
-
-  #video {
-    width: 80%;
-    height: 280px;
-  }
-
+#email {
+  height: 35px;
+  margin: 10px 0 10px 0;
+  text-align: center;
 }
 
-/* Tablet and small desktop*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  
-}
-
-/* Desktop  */
-@media only screen and (min-width: 961px) {
-  
+form>#submit {
+  font-family: 'Lexend Deca', sans-serif;
+  height: 45px;
+  width: 50%;
 }

@@ -1,98 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/3431e6ad2c.js"></script>
-  </head>
-  <body>
-    <header id="header">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Chewy|Lexend+Deca|Shojumaru&display=swap" rel="stylesheet">   
+  <script src="https://kit.fontawesome.com/3431e6ad2c.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="row-container">
       <div id="imagen-titulo">
-          <i class="fa fa-leaf fa-2x" aria-hidden="true"></i>
-        <h2 id="header-title">Plantas carnívoras</h2>
+        <i class="fa fa-leaf fa-2x" aria-hidden="true"></i>
+        <h1 id="brand-title">Plantas carnívoras</h1>
       </div>
-      <nav id="nav-bar">
-          <a href="#caracteristicas" class="nav-link">Qué incluye</a>
-          <a href="#fotos" class= "nav-link">Fotos y videos</a>
-          <a href="#nuestras-plantas" class="nav-link">Nuestras plantas</a>
-      </nav>
-    </header>
+      <a href="javascript:void(0);" class="nav-icon" onclick="openHamburger()">
+        <i class="fa fa-bars fa-2x"></i>
+      </a>
+    </div>
+    <nav id="nav-bar">
+      <a href="#caracteristicas" class="nav-link">Qué incluye</a>
+      <a href="#media" class="nav-link">Fotos y videos</a>
+      <a href="#nuestras-plantas" class="nav-link">Nuestras plantas</a>
+    </nav>
 
-    <main id="main">
-      <div id ="caracteristicas">
-        <div class="caracteristicas-container">
-          <div class="icon">
-            <i class="fa fa-bug fa-2x" aria-hidden="true"></i>
-          </div>
-          <div class="desc">
-            <h2>Alimento para tus plantas</h2>
-            <p>La compra de cualquier especie incluye alimento para los primeros 6 meses.</p>
-          </div>
+  </header>
+
+  <main id="main">
+    <section id="caracteristicas">
+      <div class="caracteristicas-container">
+        <div class="icon">
+          <i class="fa fa-bug fa-2x" aria-hidden="true"></i>
         </div>
-        <div class="caracteristicas-container">
-          <div class="icon">
-            <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
-          </div>
-          <div class="desc">
-            <h2>Breve guía</h2>
-            <p>Incluye también una breve guía del cuidado especial que requiere cada una de las especies que ofrecemos.</p>
-          </div>
-        </div>
-        <div class="caracteristicas-container">
-            <div class="icon">
-              <i class="fa fa-tint fa-2x" aria-hidden="true"></i>
-            </div>
-            <div class="desc">
-              <h2>Sustrato</h2>
-              <p>Bolsa de sustrato adicional para el primer trasplante.</p>
-            </div>
+        <div class="desc">
+          <h2>Alimento para tus plantas</h2>
+          <p>La compra de cualquier especie incluye alimento para los primeros 6 meses.</p>
         </div>
       </div>
-      <div id="fotos">
-        <iframe id ="video" height = auto width = 300px src="https://www.youtube.com/embed/L2BPAsmZAgk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div id="nuestras-plantas">
-        <div id="especies-container">
-          <div class="item">
-            <div id="item-header">Drosera capensis</div>
-            <h2 >$250</h2>
-            <ul class="plant-features">
-                <li>Originaria de Sudáfrica</li>
-                <li>Fácil cultivo</li>
-                <li>Pleno sol</li>
-                <li>requiere agua con bajo contenido mineral</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div id="item-header">Dionaea muscipula</div>
-            <h2 >$200</h2>
-            <ul class="plant-features">
-                <li>Originaria de Norteamérica</li>
-                <li>Conocida como venus atrapamoscas</li>
-                <li>Menor sensibilidad a la falta de agua</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div id="item-header">Nepenthes alata</div>
-            <h2 >$350</h2>
-            <ul class="plant-features">
-              <li>Originaria del Sudeste Asiático</li>
-              <li>Cultivo delicado</li>
-              <li>Requieren de humedad y sombra</li>
-            </ul>
-          </div>
-
+      <div class="caracteristicas-container">
+        <div class="icon">
+          <i class="fa fa-file-text fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Breve guía</h2>
+          <p>Incluye también una breve guía del cuidado especial que requiere cada una de las especies que ofrecemos.
+          </p>
         </div>
       </div>
-      <div id="form-container">
-        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
-          <label for="email" id="email-label">Dejanos un contacto para más información: <input type="email" id="email" label="email" name="email" placeholder = "Ingresa tu mail aquí" required></input></label>
-          <input type="submit" id="submit" value="Enviar"></input>
-        </form>
+      <div class="caracteristicas-container">
+        <div class="icon">
+          <i class="fa fa-tint fa-2x" aria-hidden="true"></i>
+        </div>
+        <div class="desc">
+          <h2>Sustrato</h2>
+          <p>Bolsa de sustrato adicional para el primer trasplante.</p>
+        </div>
       </div>
-    </main>
-  </body>
+    </section>
+    <section id="media">
+      <iframe id="video" height=auto width=300px src="https://www.youtube.com/embed/L2BPAsmZAgk" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="nuestras-plantas">
+      <div class="planta-item">
+        <div id="item-header">Drosera capensis</div>
+        <h2>$250</h2>
+        <ul class="plant-features">
+          <li>Originaria de Sudáfrica</li>
+          <li>Fácil cultivo</li>
+          <li>Pleno sol</li>
+          <li>requiere agua con bajo contenido mineral</li>
+        </ul>
+        <button class="buy-button">COMPRAR</button>
+      </div>
+
+      <div class="planta-item">
+        <div id="item-header">Dionaea muscipula</div>
+        <h2>$200</h2>
+        <ul class="plant-features">
+          <li>Originaria de Norteamérica</li>
+          <li>Conocida como venus atrapamoscas</li>
+          <li>Menor sensibilidad a la falta de agua</li>
+        </ul>
+        <button class="buy-button">COMPRAR</button>
+      </div>
+
+      <div class="planta-item">
+        <div id="item-header">Nepenthes alata</div>
+        <h2>$350</h2>
+        <ul class="plant-features">
+          <li>Originaria del Sudeste Asiático</li>
+          <li>Cultivo delicado</li>
+          <li>Requieren de humedad y sombra</li>
+        </ul>
+        <button class="buy-button">COMPRAR</button>
+      </div>
+    </section>
+    <section id="form-container">
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">Dejanos un contacto si deseas más
+        información:
+        <label for="email" id="email-label"> <input type="email" id="email" label="email" name="email"
+            placeholder="Ingresa tu mail aquí" required></input></label>
+        <input type="submit" id="submit" value="Enviar"></input>
+      </form>
+    </section>
+  </main>
+
+  <script>
+
+    let x = document.getElementById("nav-bar");
+    function openHamburger() {
+      if (x.style.display == "flex") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "flex";
+      }
+    }
+
+    closeHamburger = function (e) {
+      if (document.getElementById("main").contains(e.target)) {
+        x.style.display = "none"
+      } else {
+        return;
+      }
+    };
+
+    document.addEventListener('click', closeHamburger) 
+  </script>
+</body>
+
 </html>
