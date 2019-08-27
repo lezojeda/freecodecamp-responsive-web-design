@@ -64,8 +64,9 @@
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     <section id="nuestras-plantas">
-      <div class="planta-item">
-        <div id="item-header">Drosera capensis</div>
+      <div class="planta-item" onmouseout="hideImage(this)">
+        <div id="item-header"
+         >Drosera capensis</div>
         <h2>$250</h2>
         <ul class="plant-features">
           <li>Originaria de Sudáfrica</li>
@@ -107,7 +108,7 @@
     </section>
   </main>
 
-  <script>
+  <script id="hamburger-menu">
 
     let x = document.getElementById("nav-bar");
     function openHamburger() {
@@ -127,6 +128,10 @@
     };
 
     document.addEventListener('click', closeHamburger) 
+  </script>
+
+  <script id="img-plant-hover">
+    
   </script>
 </body>
 
