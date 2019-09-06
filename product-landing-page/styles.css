@@ -68,6 +68,9 @@ header {
 
 .nav-icon {
   color: black;
+  padding: 2px;
+  border: 1px solid rgb(31, 29, 29);
+  border-radius: 3px;
 }
 
 nav {
