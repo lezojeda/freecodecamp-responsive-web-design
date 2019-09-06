@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas Ezequiel Ojeda</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/3431e6ad2c.js"></script>
@@ -11,13 +12,23 @@
 </head>
 
 <body>
+  <script>
+    function goTo(id) {
+      let destination = document.getElementById(id);
+      let yCoord = destination.offsetTop - 48;
+      window.scrollTo({
+        top: yCoord,
+        behavior: "smooth"
+      });
+    }
+  </script>
   <header>
     <nav id="navbar">
       <ul id="nav-list">
-        <li><a class="nav-link" href="#projects-section"><span class="asd"></span><span
-              class="underline">Portfolio</span></a></li>
-        <li><a class="nav-link" href="#about-section"><span class="underline">Sobre mí</span></a></li>
-        <li><a class="nav-link" href="#contact-section"><span class="underline">Contacto</span></a></li>
+        <li><div class="nav-link" onclick="goTo('projects-section')"><span
+              class="underline">Portfolio</span></div></li>
+        <li><div class="nav-link" onclick="goTo('about-section')"><span class="underline">Sobre mí</span></div></li>
+        <li><div class="nav-link" onclick="goTo('contact-section')"><span class="underline">Contacto</span></div></li>
       </ul>
     </nav>
   </header>
@@ -27,8 +38,8 @@
       <h1>Lucas E. Ojeda</h1>
       <h3>desarrollo front-end</h3>
     </div>
-    <a href="#projects-section"><i class="fas fa-chevron-down fa-3x arrow-before"></i><i
-        class="fas fa-chevron-down fa-3x arrow-after"></i></a>
+    <div onclick="goTo('projects-section')" class="arrow-container"><i class="fas fa-chevron-down fa-3x arrow-before"></i><i
+        class="fas fa-chevron-down fa-3x arrow-after"></i></div>
   </section>
 
   <section id="projects-section">
@@ -47,7 +58,7 @@
       </div>
 
       <div class="project-tile">
-        <a title="Link to the project's codepen" id="project-link" href="https://codepen.io/lezojeda/pen/WVrWPq"
+        <a title="Link to the project's codepen" id="project-link" href="https://codepen.io/lezojeda/full/WVrWPq"
           target="_blank">
           <img class="project-image"
             src="https://raw.githubusercontent.com/lezojeda/freecodecamp-responsive-web-design/master/portfolio-webpage/images/markdown-previewer-preview.jpg"
@@ -57,7 +68,7 @@
       </div>
 
       <div class="project-tile">
-        <a title="Link to the project's codepen" class="project-link" href="https://codepen.io/lezojeda/pen/oNvYNjr"
+        <a title="Link to the project's codepen" class="project-link" href="https://codepen.io/lezojeda/full/oNvYNjr"
           target="_blank">
           <img class="project-image" src="https://raw.githubusercontent.com/lezojeda/freecodecamp-responsive-web-design/master/portfolio-webpage/images/pomodoro-clock-preview.jpg" alt="preview of the Pomodoro Clock's page"></a>
         <div class="project-title"><span class="project-title-effect">Pomodoro Clock</span></div>
@@ -81,7 +92,7 @@
       </div>
 
       <div class="project-tile">
-        <a title="Link to the project's codepen" class="project-link" href="https://codepen.io/lezojeda/pen/ZgoyNp"
+        <a title="Link to the project's codepen" class="project-link" href="https://codepen.io/lezojeda/full/ZgoyNp"
           target="_blank">
           <img class="project-image" src="https://raw.githubusercontent.com/lezojeda/freecodecamp-responsive-web-design/master/portfolio-webpage/images/drum-machine-preview.jpg" alt="preview of the Drum Machine's page"></a>
         <div class="project-title"><span class="project-title-effect">Drum Machine</span></div>
