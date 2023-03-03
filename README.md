@@ -11,6 +11,3 @@
 ### 4. **[Technical Documentation Page](https://github.com/lezojeda/freecodecamp-responsive-web-design/tree/master/technical-documentation-page)**
   
 ### 5. **[Personal Portfolio Webpage](https://github.com/lezojeda/freecodecamp-responsive-web-design/tree/master/portfolio-webpage)**
-
-![Responsive Web Design certificate image](https://res.cloudinary.com/dgfn49hld/image/upload/v1567008493/fcc-certificates/responsive-web_lopxmd.png)
-
